@@ -1,6 +1,6 @@
 import css from "./App.module.css";
 import { useEffect, useState } from "react";
-import fetchMovies from "../services/movieService";
+import fetchMovies from "../../services/movieService";
 import SearchBar from "../SearchBar/SearchBar";
 import toast, { Toaster } from "react-hot-toast";
 import MovieGrid from "../MovieGrid/MovieGrid";
