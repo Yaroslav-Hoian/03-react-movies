@@ -1,4 +1,3 @@
-import toast from "react-hot-toast";
 import type { Movie } from "../../types/movie";
 import css from "./MovieGrid.module.css";
 
@@ -8,11 +7,6 @@ interface MovieGridProps {
 }
 
 function MovieGrid({ onSelect, movies }: MovieGridProps) {
-  if (movies.length === 0) {
-    toast.error("No movies found for your request.");
-    return null;
-  }
-
   return (
     <ul className={css.grid}>
       {movies.map((movie) => (
